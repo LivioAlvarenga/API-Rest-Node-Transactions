@@ -1,5 +1,5 @@
 <h1 align="center"> 
-	API REST em Node.js puro para CRUD de tarefas
+	API REST em Node.js 
 </h1>
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
@@ -14,86 +14,20 @@
 &nbsp;
 <a id="-sobre-o-projeto"></a>
 
-![Insomnia](https://github.com/LivioAlvarenga/API-NodeJs-Tasks/blob/master/files/GET.gif?raw=true#vitrinedev)
+![Insomnia](https://github.com/LivioAlvarenga/API-Rest-Node-Transitions/blob/master/files/GET.gif?raw=true#vitrinedev)
 
 ## 💻 Sobre o projeto
 
-🚀 Desenvolver uma API REST para realizar o CRUD de suas tasks (tarefas). Usei Node.js focado nos fundamentos da tecnologia, sem frameworks ou bibliotecas externas. Aprenderemos sobre módulos internos do Node.js como HTTP, Crypto e File System e sobre fundamentos HTTP como requests, respondes, headers, status code, route e query parameters, etc. Também daremos profundidade em Streams no Node.js e como aplica-las para realizarmos operações assíncronas e parciais em nosso back-end.
-
-> **disclaimer:** Sei que esta não é a melhor forma de criar uma API-REST, mas gostaria de ver como uma API roda por debaixo do capo. Queria ver o conceito de Streams no Node.JS, vendo Buffers e chunk rodando ao vivo e a cores, rs e foi ótimo para aprender sobre o assunto. Olharei para o Express com outros olhos agora.
-
-### Rotas e regras de negócio
-
-Estrutura (propriedades) que uma task deve ter:
-
-- `id` - Identificador único de cada task
-- `title` - Título da task
-- `description` - Descrição detalhada da task
-- `completed_at` - Data de quando a task foi concluída. O valor inicial deve ser `null`
-- `created_at` - Data de quando a task foi criada.
-- `updated_at` - Deve ser sempre alterado para a data de quando a task foi atualizada.
-
-Rotas:
-
-- `POST - /tasks`
-  Deve ser possível criar uma task no banco de dados, enviando os campos `title` e `description` por meio do `body` da requisição.
-  Ao criar uma task, os campos: `id`, `created_at`, `updated_at` e `completed_at` devem ser preenchidos automaticamente, conforme a orientação das propriedades acima.
-
-![POST](https://github.com/LivioAlvarenga/API-NodeJs-Tasks/blob/master/files/POST.gif?raw=true)
-
-- `GET - /tasks`
-  Deve ser possível listar todas as tasks salvas no banco de dados.
-  Também deve ser possível realizar uma busca, filtrando as tasks pelo `title` e `description`
-
-![GET](https://github.com/LivioAlvarenga/API-NodeJs-Tasks/blob/master/files/GET.gif?raw=true)
-
-- `PUT - /tasks/:id`
-  Deve ser possível atualizar uma task pelo `id`.
-  No `body` da requisição, deve receber somente o `title` e/ou `description` para serem atualizados.
-  Se for enviado somente o `title`, significa que o `description` não pode ser atualizado e vice-versa.
-  Antes de realizar a atualização, deve ser feito uma validação se o `id` pertence a uma task salva no banco de dados.
-
-![PUT](https://github.com/LivioAlvarenga/API-NodeJs-Tasks/blob/master/files/PUT.gif?raw=true)
-
-- `DELETE - /tasks/:id`
-  Deve ser possível remover uma task pelo `id`.
-  Antes de realizar a remoção, deve ser feito uma validação se o `id` pertence a uma task salva no banco de dados.
-
-![DELETE](https://github.com/LivioAlvarenga/API-NodeJs-Tasks/blob/master/files/DELETE.gif?raw=true)
-
-- `PATCH - /tasks/:id/complete`
-
-  Deve ser possível marcar a task como completa ou não. Isso significa que se a task estiver concluída, deve voltar ao seu estado “normal”.
-
-  Antes da alteração, deve ser feito uma validação se o `id` pertence a uma task salva no banco de dados.
-
-![PATCH](https://github.com/LivioAlvarenga/API-NodeJs-Tasks/blob/master/files/PATCH.gif?raw=true)
-
-- Validar se as propriedades `title` e `description` das rotas `POST` e `PUT` estão presentes no `body` da requisição.
-
-- Nas rotas que recebem o `/:id`, além de validar se o `id` existe no banco de dados, retornar a requisição com uma mensagem informando que o registro não existe.
-
-Criação via CSV com Stream:
-
-> Vamos utilizar a lib [csv-parse](https://csv.js.org/), utilizando o exemplo de [iterador async](https://csv.js.org/parse/api/async_iterator/).
-
-Crie um arquivo a parte para realizar a leitura do arquivo CSV.
-
-Deve ser feito a leitura do CSV e para cada linha, realize uma requisição para a rota `POST - /tasks`, passando os campos necessários.
-
-Formato do CSV:
-
-    title,description
-    Task 01,Descrição da Task 01
+🚀 Em construção...
 
 &nbsp;
 
 <p align="center">
-  <a href="#license"><img src="https://img.shields.io/github/license/LivioAlvarenga/API-NodeJs-Tasks?color=ff0000"></a>
-  <a href="https://github.com/LivioAlvarenga/API-NodeJs-Tasks/issues"><img src="https://img.shields.io/github/issues/LivioAlvarenga/API-NodeJs-Tasks" alt="issue site API-NodeJs-Tasks" /></a>
-  <a href="https://github.com/LivioAlvarenga/API-NodeJs-Tasks"><img src="https://img.shields.io/github/languages/count/LivioAlvarenga/API-NodeJs-Tasks" alt="total amount of programming languages used in the project" /></a>
-  <a href="https://github.com/LivioAlvarenga/API-NodeJs-Tasks"><img src="https://img.shields.io/github/languages/top/LivioAlvarenga/API-NodeJs-Tasks" alt="most used language in the projects" /></a>
-  <a href="https://github.com/LivioAlvarenga/API-NodeJs-Tasks"><img src="https://img.shields.io/github/repo-size/LivioAlvarenga/API-NodeJs-Tasks" alt="repository size" /></a>
+  <a href="#license"><img src="https://img.shields.io/github/license/LivioAlvarenga/API-Rest-Node-Transitions?color=ff0000"></a>
+  <a href="https://github.com/LivioAlvarenga/API-Rest-Node-Transitions/issues"><img src="https://img.shields.io/github/issues/LivioAlvarenga/API-Rest-Node-Transitions" alt="issue site API-Rest-Node-Transitions" /></a>
+  <a href="https://github.com/LivioAlvarenga/API-Rest-Node-Transitions"><img src="https://img.shields.io/github/languages/count/LivioAlvarenga/API-Rest-Node-Transitions" alt="total amount of programming languages used in the project" /></a>
+  <a href="https://github.com/LivioAlvarenga/API-Rest-Node-Transitions"><img src="https://img.shields.io/github/languages/top/LivioAlvarenga/API-Rest-Node-Transitions" alt="most used language in the projects" /></a>
+  <a href="https://github.com/LivioAlvarenga/API-Rest-Node-Transitions"><img src="https://img.shields.io/github/repo-size/LivioAlvarenga/API-Rest-Node-Transitions" alt="repository size" /></a>
 <p>
 
 &nbsp;
@@ -253,9 +187,9 @@ npm run knex -- migrate:rollback
 
 ```bash
 # Clone este repositório
-git clone https://github.com/livioalvarenga/API-NodeJs-Tasks.git
+git clone https://github.com/livioalvarenga/API-Rest-Node-Transitions.git
 # Acesse a pasta do projeto no seu terminal/cmd
-cd API-NodeJs-Tasks
+cd API-Rest-Node-Transitions
 # Instale as dependências
 npm install
 # Execute a aplicação em modo de desenvolvimento
@@ -287,7 +221,7 @@ npm run dev # start server
 
 > Importar o arquivo `Insomnia.json` no Insomnia para testar as requests
 
-![Insomnia](https://github.com/LivioAlvarenga/API-NodeJs-Tasks/blob/master/files/insomnia.png?raw=true)
+![Insomnia](https://github.com/LivioAlvarenga/API-Rest-Node-Transitions/blob/master/files/insomnia.png?raw=true)
 
 &nbsp;
 
