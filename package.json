@@ -1,0 +1,35 @@
+{
+  "name": "api-rest-node",
+  "version": "1.0.0",
+  "description": "API REST em NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js"
+  },
+  "keywords": [
+    "NodeJs",
+    "Insomnia",
+    "API",
+    "Rest"
+  ],
+  "author": "Livio Alvarenga",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "fastify": "^4.13.0",
+    "knex": "^2.4.2",
+    "sqlite3": "^5.1.4"
+  }
+}
