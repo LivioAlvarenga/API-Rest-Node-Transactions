@@ -60,7 +60,7 @@ As seguintes ferramentas foram usadas na construção do projeto
   <a href= "https://www.typescriptlang.org/"><img alt="TypeScript badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=3178c6&logo=TypeScript&label=Language&message=TypeScript&color=3178c6"></a>
   <a href= "https://www.javascript.com/"><img alt="JavaScript badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=F7DF1E&logo=JavaScript&label=Language&message=JavaScript&color=F7DF1E"></a>
   <a href= "https://www.fastify.io/"><img alt="Fastify badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=000000&logo=Fastify&label=Framework&message=Fastify&color=000000"></a>
-  <a href= "https://knexjs.org/"><img alt="KnexJs badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=D26B38&logo=Knexjs&label=Query Builder&message=Knex.js&color=D26B38"></a>
+  <a href= "https://knexjs.org/"><img alt="KnexJs badge" src="https://raw.githubusercontent.com/LivioAlvarenga/API-Rest-Node-Transitions/e34350095a3219ca2d430ae560f186f95d60a332/files/knex.svg"></a>
   <a href= "https://www.sqlite.org/index.html"><img alt="SQLite badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=003b57&logo=SQLite&label=Database DEV&message=SQLite&color=003b57"></a>
   <a href= "https://insomnia.rest/"><img alt="Insomnia badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=4000BF&logo=Insomnia&label=HTTP client&message=Insomnia&color=4000BF"></a>
   <a href= "https://code.visualstudio.com/download"><img alt="vscode download" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=007ACC&logo=Visual Studio Code&label=IDE&message=Visual Studio Code&color=007ACC"></a>
