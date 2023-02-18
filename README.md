@@ -108,6 +108,7 @@ npm install -D tsx # Instalando o tsx para compilar o TypeScript em tempo real *
 ```bash
 npm install fastify # Instalando o Fastify
 npm install knex sqlite3 # Instalando o Knex e o SQLite3 para o banco de dados
+npm install dotenv # Instalando o dotenv para usar variáveis de ambiente no NodeJs
 ```
 
 ### Configurando ESlint
