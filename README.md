@@ -56,10 +56,12 @@ As seguintes ferramentas foram usadas na construção do projeto
 &nbsp;
 
 <p align="center">
+  <a href= ""><img alt="" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=ECD53F&logo=.ENV&label=Managing Environment Variables&message=.ENV&color=ECD53F"></a>
   <a href= "https://nodejs.org/en/" target="_blank" rel="noopener noreferrer"><img alt="Node.js badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/2467074c4c912dd04b12bcee1076cb5ca7ba9eaf/files/nodejs-badge.svg"></a>
   <a href= "https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><img alt="TypeScript badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/2467074c4c912dd04b12bcee1076cb5ca7ba9eaf/files/typescript-badge.svg"></a>
   <a href= "https://www.javascript.com/" target="_blank" rel="noopener noreferrer"><img alt="JavaScript badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/2467074c4c912dd04b12bcee1076cb5ca7ba9eaf/files/javascript-badge.svg"></a>
   <a href= "https://www.fastify.io/" target="_blank" rel="noopener noreferrer"><img alt="Fastify badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/2467074c4c912dd04b12bcee1076cb5ca7ba9eaf/files/fastify-badge.svg"></a>
+  <a href= "https://www.dotenv.org/" target="_blank" rel="noopener noreferrer"><img alt="Dotenv badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/2467074c4c912dd04b12bcee1076cb5ca7ba9eaf/files/fastify-badge.svg"></a>
   <a href= "https://knexjs.org/" target="_blank" rel="noopener noreferrer"><img alt="KnexJs badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/57d2e9290214202d93a058e2725693cd2fed8ac5/files/knex-badge.svg"></a>
   <a href= "https://zod.dev/" target="_blank" rel="noopener noreferrer"><img alt="ZOD badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/7caba2f743ee9b61f0225a22da57466ecb67097c/files/zod-badge.svg"></a>
   <a href= "https://www.sqlite.org/index.html" target="_blank" rel="noopener noreferrer"><img alt="SQLite badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/2467074c4c912dd04b12bcee1076cb5ca7ba9eaf/files/sqLite-badge.svg"></a>
@@ -91,6 +93,7 @@ npm init -y
 // Adicionar no arquivo package.json no campo "scripts"
 "scripts": {
   "dev": "tsx watch src/server.ts", // start server
+  "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js" // knex
 },
 ```
 
@@ -179,12 +182,7 @@ npm run knex -- migrate:rollback
 
 ## ⚙️ Funcionalidades
 
-- Criação de uma task
-- Listagem de todas as tasks
-- Atualização de uma task pelo `id`
-- Remover uma task pelo `id`
-- Marcar pelo `id` uma task como completa
-- Importação de tasks em massa por um arquivo CSV
+- [x] Cadastro de transações
 
 &nbsp;
 
