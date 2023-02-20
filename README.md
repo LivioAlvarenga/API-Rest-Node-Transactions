@@ -65,6 +65,7 @@ As seguintes ferramentas foram usadas na construção do projeto
   <a href= "https://knexjs.org/" target="_blank" rel="noopener noreferrer"><img alt="KnexJs badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/57d2e9290214202d93a058e2725693cd2fed8ac5/files/knex-badge.svg"></a>
   <a href= "https://zod.dev/" target="_blank" rel="noopener noreferrer"><img alt="ZOD badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/7caba2f743ee9b61f0225a22da57466ecb67097c/files/zod-badge.svg"></a>
   <a href= "https://www.sqlite.org/index.html" target="_blank" rel="noopener noreferrer"><img alt="SQLite badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/2467074c4c912dd04b12bcee1076cb5ca7ba9eaf/files/sqLite-badge.svg"></a>
+  <a href= "https://vitest.dev/"><img alt="Vitest Badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=6E9F18&logo=Vitest&label=Test Framework&message=Vitest&color=6E9F18"></a>
   <a href= "https://insomnia.rest/" target="_blank" rel="noopener noreferrer"><img alt="Insomnia badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/2467074c4c912dd04b12bcee1076cb5ca7ba9eaf/files/insomnia-badge.svg"></a>
   <a href= "https://code.visualstudio.com/download" target="_blank" rel="noopener noreferrer"><img alt="vscode download" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/2467074c4c912dd04b12bcee1076cb5ca7ba9eaf/files/vsCode-badge.svg"></a>
   <a href= "https://github.com/prettier/prettier" target="_blank" rel="noopener noreferrer"><img alt="code formatter prettier" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/2467074c4c912dd04b12bcee1076cb5ca7ba9eaf/files/prettier-badge.svg"></a>
@@ -117,6 +118,7 @@ npm install knex sqlite3 # Instalando o Knex e o SQLite3 para o banco de dados
 npm install dotenv # Instalando o dotenv para usar variáveis de ambiente no NodeJs
 # Criar arquivo .env na raiz do projeto e adicionar as variáveis de ambiente e o arquivo env.example para exemplificar as variáveis. Obs.: Não adicionar o .env no gitignore
 npm install zod # Instalando o zod para validar os dados de entrada
+npm install -D vitest # Instalando o vitest para testes unitários
 ```
 
 ### Configurando ESlint
