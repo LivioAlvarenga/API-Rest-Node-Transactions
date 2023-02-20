@@ -112,6 +112,7 @@ npm install -D tsx # Instalando o tsx para compilar o TypeScript em tempo real *
 
 ```bash
 npm install fastify # Instalando o Fastify
+npm install @fastify/cookie # Instalando o @fastify/cookie para usar cookies no Fastify
 npm install knex sqlite3 # Instalando o Knex e o SQLite3 para o banco de dados
 npm install dotenv # Instalando o dotenv para usar variáveis de ambiente no NodeJs
 # Criar arquivo .env na raiz do projeto e adicionar as variáveis de ambiente e o arquivo env.example para exemplificar as variáveis. Obs.: Não adicionar o .env no gitignore
