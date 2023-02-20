@@ -1,5 +1,5 @@
 <h1 align="center"> 
-	API REST em Node.js 
+	API REST em Node.js de transações financeiras
 </h1>
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
@@ -39,10 +39,10 @@
 
 ## 📺 Vitrine Dev
 
-| :placard: Vitrine.Dev |                              |
-| --------------------- | ---------------------------- |
-| :sparkles: Nome       | **API RESTful com Node.js**  |
-| :label: Tecnologias   | NodeJs, JavaScript, Insomnia |
+| :placard: Vitrine.Dev |                                                                                        |
+| --------------------- | -------------------------------------------------------------------------------------- |
+| :sparkles: Nome       | **API REST em Node.js de transações financeiras**                                      |
+| :label: Tecnologias   | NodeJs, TypeScript, JavaScript, Fastify, Insomnia, Knex, Zod, SQLite, EsLint, Prettier |
 
 ---
 
@@ -56,16 +56,17 @@ As seguintes ferramentas foram usadas na construção do projeto
 &nbsp;
 
 <p align="center">
-  <a href= "https://nodejs.org/en/"><img alt="Node.js badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=339933&logo=Node.js&label=Runtime Environment&message=Node.js&color=3139933"></a>
-  <a href= "https://www.typescriptlang.org/"><img alt="TypeScript badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=3178c6&logo=TypeScript&label=Language&message=TypeScript&color=3178c6"></a>
-  <a href= "https://www.javascript.com/"><img alt="JavaScript badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=F7DF1E&logo=JavaScript&label=Language&message=JavaScript&color=F7DF1E"></a>
-  <a href= "https://www.fastify.io/"><img alt="Fastify badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=000000&logo=Fastify&label=Framework&message=Fastify&color=000000"></a>
-  <a href= "https://knexjs.org/"><img alt="KnexJs badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/57d2e9290214202d93a058e2725693cd2fed8ac5/files/knex-badge.svg"></a>
-  <a href= "https://zod.dev/"><img alt="ZOD badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/7caba2f743ee9b61f0225a22da57466ecb67097c/files/zod-badge.svg"></a>
-  <a href= "https://www.sqlite.org/index.html"><img alt="SQLite badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=003b57&logo=SQLite&label=Database DEV&message=SQLite&color=003b57"></a>
-  <a href= "https://insomnia.rest/"><img alt="Insomnia badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=4000BF&logo=Insomnia&label=HTTP client&message=Insomnia&color=4000BF"></a>
-  <a href= "https://code.visualstudio.com/download"><img alt="vscode download" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=007ACC&logo=Visual Studio Code&label=IDE&message=Visual Studio Code&color=007ACC"></a>
-  <a href= "https://github.com/prettier/prettier"><img alt="code formatter prettier" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=F7B93E&logo=Prettier&label=Code Formatter&message=Prettier&color=F7B93E"></a>
+  <a href= "https://nodejs.org/en/" target="_blank" rel="noopener noreferrer"><img alt="Node.js badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=339933&logo=Node.js&label=Runtime Environment&message=Node.js&color=3139933"></a>
+  <a href= "https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><img alt="TypeScript badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=3178c6&logo=TypeScript&label=Language&message=TypeScript&color=3178c6"></a>
+  <a href= "https://www.javascript.com/" target="_blank" rel="noopener noreferrer"><img alt="JavaScript badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=F7DF1E&logo=JavaScript&label=Language&message=JavaScript&color=F7DF1E"></a>
+  <a href= "https://www.fastify.io/" target="_blank" rel="noopener noreferrer"><img alt="Fastify badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=000000&logo=Fastify&label=Framework Web&message=Fastify&color=000000"></a>
+  <a href= "https://knexjs.org/" target="_blank" rel="noopener noreferrer"><img alt="KnexJs badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/57d2e9290214202d93a058e2725693cd2fed8ac5/files/knex-badge.svg"></a>
+  <a href= "https://zod.dev/" target="_blank" rel="noopener noreferrer"><img alt="ZOD badge" src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/7caba2f743ee9b61f0225a22da57466ecb67097c/files/zod-badge.svg"></a>
+  <a href= "https://www.sqlite.org/index.html" target="_blank" rel="noopener noreferrer"><img alt="SQLite badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=003b57&logo=SQLite&label=Database DEV&message=SQLite&color=003b57"></a>
+  <a href= "https://insomnia.rest/" target="_blank" rel="noopener noreferrer"><img alt="Insomnia badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=4000BF&logo=Insomnia&label=HTTP client&message=Insomnia&color=4000BF"></a>
+  <a href= "https://code.visualstudio.com/download" target="_blank" rel="noopener noreferrer"><img alt="vscode download" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=007ACC&logo=Visual Studio Code&label=IDE&message=Visual Studio Code&color=007ACC"></a>
+  <a href= "https://github.com/prettier/prettier" target="_blank" rel="noopener noreferrer"><img alt="code formatter prettier" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=F7B93E&logo=Prettier&label=Code Formatter&message=Prettier&color=F7B93E"></a>
+  <a href= "https://eslint.org/" target="_blank" rel="noopener noreferrer"><img alt="code standardization eslint" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=4B32C3&logo=ESLint&label=Code Standardization&message=ESLint&color=4B32C3"></a>
 </p>
 
 ---
