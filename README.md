@@ -39,10 +39,10 @@
 
 ## 📺 Vitrine Dev
 
-| :placard: Vitrine.Dev |                                                                                        |
-| --------------------- | -------------------------------------------------------------------------------------- |
-| :sparkles: Nome       | **API REST em Node.js de transações financeiras**                                      |
-| :label: Tecnologias   | NodeJs, TypeScript, JavaScript, Fastify, Insomnia, Knex, Zod, SQLite, EsLint, Prettier |
+| :placard: Vitrine.Dev |                                                                                              |
+| --------------------- | -------------------------------------------------------------------------------------------- |
+| :sparkles: Nome       | **API REST em Node.js de transações financeiras**                                            |
+| :label: Tecnologias   | NodeJs, TypeScript, JavaScript, .ENV, Fastify, Insomnia, Knex, Zod, SQLite, EsLint, Prettier |
 
 ---
 
@@ -182,7 +182,22 @@ npm run knex -- migrate:rollback
 
 ## ⚙️ Funcionalidades
 
-- [x] Cadastro de transações
+### RF - Requisitos Funcionais
+
+- [] Usuário deve poder criar novas transações;
+- [] Usuário deve poder listar todas as transações que ja foram criadas;
+- [] Usuário deve poder obter um resumo da conta, com o total de entradas, saídas e o total de crédito;
+- [] Usuário deve poder visualizar uma transação específica;
+
+### RN - Regras de Negócio
+
+- [] A transação deve ser do tipo entrada (crédito) ou saída (débito);
+- [] Deve ser possível identificar o usuário que criou as transações, (Obs: Não é necessário autenticação);
+- []
+
+### RNF - Requisitos Não Funcionais
+
+- [] Em construção...
 
 &nbsp;
 
