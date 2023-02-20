@@ -121,6 +121,7 @@ npm install dotenv # Instalando o dotenv para usar variáveis de ambiente no Nod
 npm install zod # Instalando o zod para validar os dados de entrada
 npm install -D vitest # Instalando o vitest para testes unitários
 npm install -D supertest # Instalando o supertest para testes de integração
+npm install -D @types/supertest # Instalando o @types/supertest para o TypeScript reconhecer os métodos do supertest
 ```
 
 ### Configurando ESlint
