@@ -94,7 +94,8 @@ npm init -y
 // Adicionar no arquivo package.json no campo "scripts"
 "scripts": {
   "dev": "tsx watch src/server.ts", // start server
-  "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js" // knex
+  "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js", // knex
+  "test": "vitest" // test
 },
 ```
 
@@ -119,6 +120,7 @@ npm install dotenv # Instalando o dotenv para usar variáveis de ambiente no Nod
 # Criar arquivo .env na raiz do projeto e adicionar as variáveis de ambiente e o arquivo env.example para exemplificar as variáveis. Obs.: Não adicionar o .env no gitignore
 npm install zod # Instalando o zod para validar os dados de entrada
 npm install -D vitest # Instalando o vitest para testes unitários
+npm install -D supertest # Instalando o supertest para testes de integração
 ```
 
 ### Configurando ESlint
