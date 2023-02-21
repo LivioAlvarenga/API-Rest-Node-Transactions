@@ -97,6 +97,7 @@ npm init -y
   "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js", // knex
   "test": "vitest", // test
   "build": "tsup src", // compile typescript project to js to build production
+  "prod": "node build/server.js" // start server in production
 },
 ```
 
@@ -116,7 +117,9 @@ npm install -D tsx # Instalando o tsx para compilar o TypeScript em tempo real *
 ```bash
 npm install fastify # Instalando o Fastify
 npm install @fastify/cookie # Instalando o @fastify/cookie para usar cookies no Fastify
-npm install knex sqlite3 # Instalando o Knex e o SQLite3 para o banco de dados
+npm install knex # Instalando o Knex para usar o banco de dados
+npm install -D sqlite3 # Instalando o sqlite3 para o banco de dados SQLite3
+npm install pg # Instalando o pg para o banco de dados PostgreSQL
 npm install dotenv # Instalando o dotenv para usar variáveis de ambiente no NodeJs
 # Criar arquivo .env na raiz do projeto e adicionar as variáveis de ambiente e o arquivo env.example para exemplificar as variáveis. Obs.: Não adicionar o .env no gitignore
 npm install zod # Instalando o zod para validar os dados de entrada
