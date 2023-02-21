@@ -14,11 +14,11 @@
 &nbsp;
 <a id="-sobre-o-projeto"></a>
 
-![Insomnia](https://github.com/LivioAlvarenga/API-Rest-Node-Transactions/blob/master/files/GET.gif?raw=true#vitrinedev)
+![Insomnia](https://github.com/LivioAlvarenga/API-Rest-Node-Transactions/blob/master/files/insomnia.png?raw=true#vitrinedev)
 
 ## 💻 Sobre o projeto
 
-🚀 Em construção...
+🚀 API Rest em Node.js de transações financeiras.
 
 &nbsp;
 
@@ -31,7 +31,7 @@
 <p>
 
 <p align="center">
-  <a href= "https://api-rest-node-transactions.onrender.com"><img alt="deploy badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=46E3B7&logo=Render&label=Deploy&message=Render&color=46E3B7"></a>
+  <a href= "https://api-rest-node-transactions.onrender.com"><img alt="deploy badge" height=40 src="https://raw.githubusercontent.com/LivioAlvarenga/LivioAlvarenga/16529b41db0c4089f62eccbe301f46b3d8f157cf/files/render-badge.svg"></a>
 <p>
 
 &nbsp;
@@ -43,10 +43,11 @@
 
 ## 📺 Vitrine Dev
 
-| :placard: Vitrine.Dev |                                                                                              |
-| --------------------- | -------------------------------------------------------------------------------------------- |
-| :sparkles: Nome       | **API REST em Node.js de transações financeiras**                                            |
-| :label: Tecnologias   | NodeJs, TypeScript, JavaScript, .ENV, Fastify, Insomnia, Knex, Zod, SQLite, EsLint, Prettier |
+| :placard: Vitrine.Dev |                                                                                                                  |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| :sparkles: Nome       | **API REST em Node.js de transações financeiras**                                                                |
+| :label: Tecnologias   | NodeJs, TypeScript, JavaScript, .ENV, Fastify, Insomnia, Knex, Zod, SQLite, Postgresql, Vitest, EsLint, Prettier |
+| :rocket: URL          | https://api-rest-node-transactions.onrender.com                                                                  |
 
 ---
 
@@ -199,20 +200,27 @@ npm run knex -- migrate:rollback
 
 ### RF - Requisitos Funcionais
 
-- [] Usuário deve poder criar novas transações;
-- [] Usuário deve poder listar todas as transações que ja foram criadas;
-- [] Usuário deve poder obter um resumo da conta, com o total de entradas, saídas e o total de crédito;
-- [] Usuário deve poder visualizar uma transação específica;
+- Usuário deve poder criar novas transações;
+- Usuário deve poder listar todas as transações que ja foram criadas;
+- Usuário deve poder obter um resumo da conta, com o total de entradas, saídas e o total de crédito;
+- Usuário deve poder visualizar uma transação específica;
 
 ### RN - Regras de Negócio
 
-- [] A transação deve ser do tipo entrada (crédito) ou saída (débito);
-- [] Deve ser possível identificar o usuário que criou as transações, (Obs: Não é necessário autenticação);
-- []
+- A transação deve ser do tipo entrada (crédito) ou saída (débito);
+- Deve ser possível identificar o usuário que criou as transações, (Obs: Não é necessário autenticação);
 
 ### RNF - Requisitos Não Funcionais
 
-- [] Em construção...
+- Testes e2e de todas as rotas em Vitest;
+- Uso de sqlite em ambiente Dev e PostgreSQL em ambiente Prod;
+- Uso de Knex.js para migrations e queries;
+- Uso de Fastify.js para rotas e middlewares;
+- Uso de Zod.js para validação de dados de entrada;
+- Uso de Supertest.js para testes de integração;
+- Uso de Tsup.js para compilar o TypeScript em modo de produção;
+- Uso de Eslint para padronização de código;
+- Uso de Prettier para padronização de código;
 
 &nbsp;
 
@@ -228,28 +236,15 @@ npm install
 # Execute a aplicação em modo de desenvolvimento
 npm run dev
 # A aplicação será aberta na porta:3333 - acesse http://localhost:3333
-npm run csv
-# Importar arquivo CSV com tasks (open db.json to see the import result)
-```
-
-### 🧭 Rodando a aplicação server (Modo desenvolvimento)
-
-```bash
-npm run dev
-# A aplicação será aberta na porta:3333 - acesse http://0.0.0.0:3333/
-```
-
-### Importando arquivo CSV com tarefas
-
-```bash
-npm run dev # start server
-npm run csv # import csv file with tasks
 ```
 
 ### Testando requests com Insomnia
 
 ```bash
 npm run dev # start server
+# Escolha a variável dev (vermelho) em Insomnia
+
+# Para testar a API com deploy no render use a variável prod (verde) em Insomnia
 ```
 
 > Importar o arquivo `Insomnia.json` no Insomnia para testar as requests
