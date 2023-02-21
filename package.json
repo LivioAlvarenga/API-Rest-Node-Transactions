@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js",
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsup src"
   },
   "keywords": [
     "NodeJs",
@@ -27,6 +28,7 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "supertest": "^6.3.3",
+    "tsup": "^6.6.3",
     "tsx": "^3.12.3",
     "typescript": "^4.9.5",
     "vitest": "^0.28.5"

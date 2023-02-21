@@ -95,7 +95,8 @@ npm init -y
 "scripts": {
   "dev": "tsx watch src/server.ts", // start server
   "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js", // knex
-  "test": "vitest" // test
+  "test": "vitest", // test
+  "build": "tsup src", // compile typescript project to js to build production
 },
 ```
 
@@ -122,6 +123,7 @@ npm install zod # Instalando o zod para validar os dados de entrada
 npm install -D vitest # Instalando o vitest para testes unitários
 npm install -D supertest # Instalando o supertest para testes de integração
 npm install -D @types/supertest # Instalando o @types/supertest para o TypeScript reconhecer os métodos do supertest
+npm install -D tsup # Instalando o tsup para compilar o TypeScript em modo de produção
 ```
 
 ### Configurando ESlint
