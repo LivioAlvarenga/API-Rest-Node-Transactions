@@ -18,5 +18,5 @@
     "semi": ["error", "always"],
     "react/react-in-jsx-scope": "off"
   },
-  "ignorePatterns": ["*.config.cjs"]
+  "ignorePatterns": ["*.config.cjs", "build", "node_modules"]
 }
